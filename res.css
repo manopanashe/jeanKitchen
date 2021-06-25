@@ -1,0 +1,19 @@
+body {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+   background-image: url('/media/image15.jpg');
+   height: 100%;
+ 
+padding-top: 300px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+    
+    }
+
+    div{
+        text-align: center;
+        color: #253551;
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+    }

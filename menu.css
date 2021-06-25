@@ -1,0 +1,94 @@
+body {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+   background-image: url('/media/image12.jpg');
+   height: 99%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+    
+    }
+    h1, h2,  h4, h5, h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+        color:white;
+        white-space:pre-wrap;
+      }
+      h1{
+        padding-top: 170px;
+        padding-bottom: 17px;
+        padding-left: 17px;
+        padding-right: 17px;
+        color: white;
+        text-align: center;
+        text-decoration: underline;
+        font-family: "Playfair Display";
+       
+        letter-spacing: 5px;
+      }
+      h2{
+        text-align: center;
+        color: white;
+        font-family:  "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+      }
+button{
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+ border: white;
+ border-top:solid;
+ border-radius: 1px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+
+button:active:hover{
+  background-color: #555;
+  content: '\002B';
+}
+
+button::after{
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+button:active::after{
+  content: "\2212";
+}
+
+#content{
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #253551;
+  color: white;
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(pecita.book.otf);
+  font-family: mySecondFond;
+  src: url(LibreBaskerville-Italic.ttf);
+  font-family: myThirdFont;
+  src:url(LibreBaskerville-Regular.ttf);
+  font-family:myFourthfont;
+  src:url(Playball-Regular.ttf);
+  font-family: myFifthFont;
+  src: url(Alegreya-Italic.ttf);
+  font-family: mySixthFont;
+  src: url(ReenieBeanie-Regular.ttf);
+}

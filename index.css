@@ -1,0 +1,135 @@
+body {
+font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    color: white;
+    white-space:pre-wrap;
+  }
+
+#top-content{
+    background-image: url('/media/imagae3.jpg');
+    width: 1300px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#mid-content{
+    padding-top: 170px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+    position: relative;
+    text-align: center;
+}
+#content{
+    background-color: #253551;
+    height: 220px;
+    text-align: center;
+    color: white;
+    white-space: pre-wrap;
+    letter-spacing: 0em;
+    font-style: normal;
+}
+
+#btn1{
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+    position: relative;
+    height: auto;
+    background-color:#253551 ;
+    color:white;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+}
+#btn1:hover{
+    color: #253551;
+    background-color: white;
+}
+
+#section1{
+float: left;
+width: 660px;
+
+}
+#p1{
+    font-family: "Playfair Display";
+    text-align: center;
+    font-size: 30px;
+    color:#253551;
+    font-weight: 400;
+    line-height: 1.8em;
+ 
+}
+
+#p2{
+    font-family: "Viaoda Libre";
+    text-align: center;
+    color: #253551;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+a{
+    text-decoration: underline;
+}
+#section2{
+    float: right;
+    width: 550px;
+    
+   
+}
+#section4{
+    float: left;
+   
+}
+
+#image1{
+    float: left;
+    width: 660px; 
+    height: 500px; 
+}
+#image2{
+    float: right;
+    width: 600px;
+    height: 500px;
+    
+}
+
+
+footer{
+    padding-top: 950px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  
+}
+#footerdiv{
+ 
+    background-color: #253551;
+    color: white;
+    font-family: "Playfair Display";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+#btn3{
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+    position: relative;
+    height: auto;
+    background-color:#253551 ;
+    color:white;
+    border: 2px solid white;
+    transition-duration: 0.4s;  
+}

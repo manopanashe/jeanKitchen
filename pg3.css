@@ -1,0 +1,82 @@
+
+*{
+  box-sizing: border-box;
+}
+body{
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+}
+h1, h2,  h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    color:white;
+    white-space:pre-wrap;
+  }
+
+#myHeader{
+  padding-top: 130px; 
+  text-align: center;
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+
+}
+  
+  .row {
+    display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+    width: 400px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+    
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+      #footer{
+         
+          margin-top: 1%;
+          text-align: center;
+         
+        }
+        .fa-facebook {
+          background: #3B5998;
+          color: white;
+        }
+        .fa-twitter {
+          background: #55ACEE;
+          color: white;
+        }
+        .fa-instagram {
+          background: #a36198;
+          color: #393E46;
+          
+        }
