@@ -133,3 +133,52 @@ footer{
     border: 2px solid white;
     transition-duration: 0.4s;  
 }
+
+@media(max-width:700px){
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 2px;
+        color: white;
+        white-space:pre-wrap;
+      }
+      #top-content{
+        background-image: url('/media/imagae3.jpg');
+        width: 800px;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #nav{
+        width: 670px;
+        padding: 4px 8px;
+      
+    }
+    #nav-item{
+        padding: 4px 8px;
+    }
+    #mid-content{
+        padding-top: 170px;
+        padding-bottom: 17px;
+        padding-left: 5px;
+        padding-right: 180px;
+        position: relative;
+        text-align: center;
+    }
+    #content{
+        background-color: #253551;
+        height: 220px;
+        text-align: center;
+        color: white;
+        white-space: pre-wrap;
+        letter-spacing: 2px;
+        font-family: "Playfair Display";
+    }
+    #section2{
+        width: 550px;
+        
+       
+    }
+    
+}
