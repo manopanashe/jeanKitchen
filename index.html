@@ -1,77 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/dist/fonts/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Pokoteke</title>
 </head>
-<body>
-  <div class="w3-top" >
-    <div class="w3-bar w3-white w3-padding w3-card" id="nav" style="letter-spacing:4px;">
-      <a href="index.html" class="w3-bar-item w3-button" id="nav-item">Jean's Kitchen</a>
-      <!-- Right-sided navbar links. Hide them on small screens -->
-      <div class="w3-right w3-hide-small">
-        <a href="ourstory.html" class="w3-bar-item w3-button" id="nav-item">Our Story</a>
-        <a href="menu.html" class="w3-bar-item w3-button" id="nav-item">Menu</a>
-        <a href="photo-gallery.html" class="w3-bar-item w3-button" id="nav-item">Photos</a>
-        <a href="reservations.html" class="w3-bar-item w3-button" id="nav-item">Reservations</a>
-      </div>
-    </div>
-  </div>
 
-  <div id='top-content'>
-    <div id='mid-content'>
-    <h1 style="white-space:pre-wrap;"><a href="ourstory.html">Our Story</a></h1>
-    <h1 style="white-space:pre-wrap;"><a href="menu.html">Menu</a></h1>
-    <h1 style="white-space:pre-wrap;"><a href="photo-gallery.html">Photos</a></h1>
-    <h1 style="white-space:pre-wrap;"><a href="reservations.html">Reservations</a></h1>
-  </div>
-  </div>
-  <div id='content'>
-    <h3> Located in Harare, Eastleigh, Pokoteke serves tradtional <br>Zimbabwean dishes Made and delivered straight to you </h3>
-<button id="btn1"> <a href="menu.html"> View Menu</a> </button>
-  </div>
-  <section id="section1">
-    <p id="p1">Pokoteke Canteen was born by three friends who had  passion
-      <br>
-      for cooking delicious meals for themselves and their colleagues 
-      at work</p>
-   
-      <p id="p2">  Pokoteke Jean's Kitchen offers good quality food  <br>  and a
-        great dining experience.It is introducing breakfast,
-         lunch and dinner meals for delievery,
-      <br>  as well  as great 
-      inhouse dining experience.The kitchen offers high quality food 
-      and our fantastic meals cater for every individual.. <br>
-      Come 
-      and make it a family affair and enjoy our different meals.
-        <br> <a href="#ourstory">learn more about Our Story</a></p>
-  </section>
-  <section id="section2">
-    <img src="/media/image5.jpg">
-  </section>
-<section id="section4">
-  <img src='/media/image6.jpg' id="image1">
-</section>
-<section id="section5">
-  <img src="/media/image7.jpg" id="image2" >
-</section>
-<footer>
-  <div id="footerdiv">
-  <p>11F Market Street <br>
-  Eastlea,Harare</p>
-  <button id="btn3" ><a  href="https://www.google.com/maps/@-17.8308646,31.0629968,73m/data=!3m1!1e3">Get Directions</a></button>
- <p> Opening Times <br>
-  Mon-Thur <br>
-  10am-7pm <br>
-  Fri-Sund <br>
-  12pm-11pm<br></p>
-</div>
+<body class="d-flex flex-column min-vh-100 text-center fw-lighter">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid min-w-100" id="nav" style="letter-spacing:4px;">
+                <a href="index.html" class="navbar-brand logo">Jean's Kitchen<i class="bi bi-bag-heart-fill"></i></a>
 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
 
-</footer>
+                        <a href="ourstory.html" class="nav-link">Our Story</a>
+                        <a href="menu.html" class="nav-link">Menu</a>
+                        <a href="photo-gallery.html" class="nav-link">Photos</a>
+                        <a href="reservations.html" class="nav-link">Reservations</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container main-container">
+
+        <div class="conttainer-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-lg-8 pt-4 ">
+                    <img class="banner-img" src="/media/imagae3.jpg" alt="Top Banner Image" srcset="" width="600"
+                        height="550">
+                </div>
+                <div class="col-xs-12 col-lg-2 pt-4" style="display: table;">
+                    <section id="text-section1">
+                        <p style="width: 400px;"> Located in Harare, Eastleigh, Pokoteke serves tradtional
+                            Zimbabwean dishes Made and delivered straight to you </p>
+                        <button type="button" class="btn btn-light" id="btn1"> <a
+                                style=" text-decoration: none;color:white" href="menu.html"> View Menu</a> </button>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid pt-4">
+            <div class="row">
+                <div class="col-xs-12 col-lg-12">
+                    <section id="section2">
+                        <p >Pokoteke Canteen was born by three friends who had  passion
+                          
+                          for cooking delicious meals for themselves and their colleagues 
+                          at work</p>
+                       
+                          <p >  Pokoteke Jean's Kitchen offers good quality food    and a
+                            great dining experience.It is introducing breakfast,
+                             lunch and dinner meals for delievery,
+                         as well  as great 
+                          inhouse dining experience.The kitchen offers high quality food 
+                          and our fantastic meals cater for every individual..
+                          Come 
+                          and make it a family affair and enjoy our different meals.
+                             <a href="#ourstory">learn more about Our Story</a></p>
+                      </section>
+                </div>
+                
+                
+                
+                
+            </div>
+            
+        </div>
+        <div class="container pb-4">
+            <div class="row">
+
+                <div class="col-xs-12 col-lg-4">
+                    <div class="row">
+                        <div class="column">
+                            <img src="/media/image5.jpg" id="image5" width="700" height="630">
+                        </div>
+                    </div>
+                      
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <div class="row">
+                        <div class="column">
+        
+                            <img src='/media/image6.jpg' id="image1" height="630">
+                        </div>
+                    </div>
+                      
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <div class="row">
+                        <div class="column">
+
+                            <img src="/media/image7.jpg" id="image2" height="630" >
+                        </div>
+                    </div>
+                      
+                </div>
+            </div>
+            </div>
+        </div>
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+               <p >Address:  11F Market Street Eastlea,Harare </p>
+                   <button id="btn3" type="button" class="btn btn-light"><a style="text-decoration: none;color:white" href="https://www.google.com/maps/@-17.8308646,31.0629968,73m/data=!3m1!1e3">Get Directions</a></button>
+                </div>
+                <div class="col-sm">
+                    <span class="pb-1"> Share on..
+                        <a href="https://twitter.com/" target="_blank" style="color: black;"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" style="color: black;"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" style="color: black;"><i
+                                class="bi bi-facebook"></i></a></span>
+                                
+                </div>
+                <div class="col-sm">
+                    <p> Opening Times <br>
+                        Mon-Thur <br>
+                        10am-7pm <br>
+                        Fri-Sund <br>
+                        12pm-11pm<br></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

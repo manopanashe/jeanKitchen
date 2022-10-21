@@ -1,111 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/dist/fonts/bootstrap-icons.css">
+  <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Pokoteke</title>
 </head>
 <body>
-    <div class="w3-top">
-        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-          <a href="index.html" class="w3-bar-item w3-button">Jean's Kitchen</a>
-          <!-- Right-sided navbar links. Hide them on small screens -->
-          <div class="w3-right w3-hide-small">
-            <a href="ourstory.html" class="w3-bar-item w3-button">Our Story</a>
-            <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
-            <a href="photo-gallery.html" class="w3-bar-item w3-button">Photos</a>
-            <a href="reservations.html" class="w3-bar-item w3-button">Reservations</a>
-          </div>
+  <body class="d-flex flex-column min-vh-100 text-center fw-lighter">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid min-w-100" id="nav" style="letter-spacing:4px;">
+                <a href="index.html" class="navbar-brand logo">Jean's Kitchen<i class="bi bi-bag-heart-fill"></i></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+
+                        <a href="ourstory.html" class="nav-link">Our Story</a>
+                        <a href="menu.html" class="nav-link">Menu</a>
+                        <a href="photo-gallery.html" class="nav-link">Photos</a>
+                        <a href="reservations.html" class="nav-link">Reservations</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container main-container">
+<div class="col-lg-12">
+  <h1>Our Menu</h1>
+</div>
+<div class="col-xs-12 col-lg-12">
+
+  <div class="accordion pb-4" id="accordionExample">
+    <div class="accordion-item">
+     
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Traditional Food
+        </button>
+     
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <li>White sadza(maize meal)...............$3</li>
+          <li>Sadza rezviyo (millet)................$3</li>
+          <li>White rice............................$4</li>
+          <li>Peanut butter rice....................$5</li>
+          <li>Spaghetti.............................$5</li>
+          
         </div>
       </div>
-<div id="top-content">
-  <h1 > Our Menu</h1> 
-<div id="food-menu">
-  <button  class="collapsible">Traditional Food</button>
-  <div id="content">
-    <p>White sadza(maize meal)...............$3 </p> 
-    <p>Sadza rezviyo (millet)................$3</p> 
-    <p>White rice............................$4</p>
-    <p>Peanut butter rice....................$5</p> 
-    <p>Spaghetti.............................$5</p>
+    </div>
+    <div class="accordion-item">
+      
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Specialities
+        </button>
+     
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <ul>
+            <li>English breakfast.........................$5.00</li>
+            <small>( 2sausages,2 friedeggs, baked beans, bacon and grilled tomatoes)</small>
+            <li>Toast and eggs............................$2.00</li>
+            <small>(scrambled, fried or poached eggs)</small>
+            <li>2 slices of toast with butter or jam......$2.00</li>
+            <li>Ham and cheese sandwich...................$2.00</li>
+            <li>cheese and tomato sandwich................$2.00</li>
+            <li>Egg and mayo sandwich.....................$2.00</li>
+            <li>Bread and butter sandwich(jam)............$2.00</li>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+   
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Relishes
+        </button>
+   
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <li>Beef stew..........................$3</li>
+          <li>Fried chicken......................$5</li>
+          <li>Stewed chicken.....................$5</li>
+          <li>Beef bones with vegetables........$5</li>
+          <li>Road runner chicken................$5</li>
+          <small>(free range chicken)</small>
+          <li>Matemba..........................$5</li>
+          <small>(sardines)</small>
+          <li>Maguru.............................$5</li>
+          <small>(cow intestines)</small>
+          <li>Mazondo...........................$5</li>
+          <small>(cow'feet)</small>
+          <li>Matumbu............................$6</li>
+          <small>(cow intestines)</small>
+          <li>Peanut butter ....................$6</li>
+          <small>(green vegetables cooked with peanut butter)</small>
+          <li>Muboora............................$6</li>
+          <small>(Pumpkin leaves)</small>
+          <li>Mopani worms......................$5</li>
+          <li>Chicken feet......................$5</li>
+          <li>Zviururu(Gizards)..................$6</li>
+         
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+   
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Braai
+      </button>
+ 
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <li>T-bone steak.....................$5</li>
+        <li>Grilled chicken..................$6</li>
+        <li>Grilled sausage..................$6</li>
+        <li>Pork ribs........................$6</li>
+        <li>Pork loin steak..................$6</li>
+       
+      </div>
+    </div>
   </div>
+  <div class="accordion-item">
+   
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+      Desserts
+    </button>
 
-<button  class="collapsible">Specialities</button>
-<div id="content">
-
-  <p > -English breakfast.........................$5.00</p>  
-  <p style="font-size: 15px">( 2sausages,2 friedeggs, baked beans, bacon and grilled tomatoes)</p> 
-  <p > -Toast and eggs............................$2.00</p> 
-  <p style=" font-size: 15px">(scrambled, fried or poached eggs)</p> 
-  <p > -2 slices of toast with butter or jam......$2.00</p> 
-  <p > -Ham and cheese sandwich...................$2.00</p> 
-  <p > -cheese and tomato sandwich................$2.00</p> 
-  <p > -Egg and mayo sandwich.....................$2.00</p> 
-  <p>  -Egg and bacon sandwich....................$2.00</p> 
-  <p>  -Bread and butter sandwich(jam)............$2.00</p> 
-</div> 
-
-<button  class="collapsible">Relishes</button>
-<div id="content">
-  <p>Beef stew..........................$3</p> 
-  <p>Fried chicken......................$5</p>  
-  <p>Stewed chicken.....................$5</p>  
-  <p>Beef bones with vegetables........$5</p> 
-  <p>Road runner chicken................$5</p>
-  <p style="font-size: 15px">(free range chicken)</p>  
-  <p>Matemba..........................$5 </p>
-  <p style="font-size: 15px">(sardines)</p>
-  <p>Maguru.............................$5 </p>
-  <p style="font-size: 15px"> (cow intestines)</p>  
-  <p> Mazondo...........................$5 </p>
-  <p style="font-size: 15px"> (cow'feet)</p>  
-  <p>Matumbu............................$6 </p>
-  <p style="font-size: 15px">(cow intestines)</p>  
-  <p>Peanut butter ....................$6 </p>
-  <p style="font-size: 15px">(green vegetables cooked with peanut butter)</p> 
-  <p>Muboora............................$6 </p>
-  <p style="font-size: 15px">(Pumpkin leaves)</p>  
-  <p>Mopani worms......................$5</p> 
-  <p>Chicken feet......................$5</p> 
-  <p>Zviururu(Gizards)..................$6</p> 
+  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <li>Cupcakes........................$6</li>
+      <li>Cake(pieces)....................$6</li>
+      <li>Ice-cream.......................$3</li>
+      <li>Custard.........................$3</li>
+    </div>
+  </div>
 </div>
+<div class="accordion-item">
+   
+  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+    Drinks
+  </button>
 
-
-<button  class="collapsible">Braai</button>
-<div id="content">
-  <p>T-bone steak.....................$5</p> 
-  <p>Grilled chicken..................$6</p> 
-  <p>Grilled sausage..................$6</p> 
-  <p>Pork ribs........................$6</p> 
-  <p>Pork loin steak..................$6</p> 
-</div> 
-
-<button  class="collapsible">Desserts</button>
-<div id="content">
-  <p>Cupcakes........................$6</p> 
-  <p>Cake(pieces)....................$6</p> 
-  <p>Ice-cream.......................$3</p> 
-  <p>Custard.........................$3</p> 
-</div> 
-
-
-<button class="collapsible">Drinks</button>
-<div id="content">
-  <p>Coca-cola...............$1.50</p> 
-  <p>Fanta...................$1.50</p> 
-  <p>Cherry..................$1.50</p> 
-  <p>Sprite..................$1.50</p> 
-  <p>Water...................$1.00</p> 
+<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+  <div class="accordion-body">
+    <li>Coca-cola...............$1.50</li>
+    <li>Fanta...................$1.50</li>
+    <li>Cherry..................$1.50</li>
+    <li>Sprite..................$1.50</li>
+    <li>Water...................$1.00</li>
+   
+  </div>
 </div>
-
-
 </div>
-<!---end of drinks wrapper-->
+  </div>
 </div>
-<script type='text/javascript' src='menu.js'></script>
+</div>
+    </div>
+    <footer class="mt-auto">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm">
+             <p >Address:  11F Market Street Eastlea,Harare </p>
+                 <button id="btn3" type="button" class="btn btn-light"><a style="text-decoration: none;color:white" href="https://www.google.com/maps/@-17.8308646,31.0629968,73m/data=!3m1!1e3">Get Directions</a></button>
+              </div>
+              <div class="col-sm">
+                  <span class="pb-1"> Share on..
+                      <a href="https://twitter.com/" target="_blank" style="color: black;"><i
+                              class="bi bi-twitter"></i></a>
+                      <a href="https://www.instagram.com/" target="_blank" style="color: black;"><i
+                              class="bi bi-instagram"></i></a>
+                      <a href="https://www.facebook.com/" target="_blank" style="color: black;"><i
+                              class="bi bi-facebook"></i></a></span>
+                              
+              </div>
+              <div class="col-sm">
+                  <p> Opening Times <br>
+                      Mon-Thur <br>
+                      10am-7pm <br>
+                      Fri-Sund <br>
+                      12pm-11pm<br></p>
+              </div>
+          </div>
+      </div>
+  </footer>
 </body>
 </html>
